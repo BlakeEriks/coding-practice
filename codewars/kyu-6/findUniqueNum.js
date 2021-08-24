@@ -9,5 +9,3 @@ function findUniq(arr) {
     }
     return null;
 }
-
-console.log(findUniq([1,1,0.55,1,1,1]));
