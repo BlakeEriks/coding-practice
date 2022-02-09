@@ -10,21 +10,21 @@
  * @param {TreeNode} root
  * @return {number}
  */
- var sumOfLeftLeaves = function(root) {
+const sumOfLeftLeaves = root => {
   
   let sum = 0
   
   const sumUtil = (node) => {
-      if (!node) return
-      if (node.left && !node.left.left && !node.left.right) {
-          sum += node.left.val
-      }
-      sumUtil(node.left)
-      sumUtil(node.right)
+    if (!node) {
+      return
+    }
+    if (node.left && !node.left.left && !node.left.right) {
+        sum += node.left.val
+    }
+    sumUtil(node.left)
+    sumUtil(node.right)
   }
   
   sumUtil(root)
-  
   return sum
-  
-};
+}
