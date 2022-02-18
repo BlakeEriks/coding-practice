@@ -23,7 +23,7 @@ var reverseListIterative = function(node) {
     node.next = prev
     prev = node
     node = next
-    if (node) next = node.next
+    next = node?.next
   }
   return prev
 }
