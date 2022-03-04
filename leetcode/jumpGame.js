@@ -15,8 +15,5 @@ var canJump = function(nums) {
       }
     }
   }
-  console.log(dp)
   return dp[nums.length-1] || false
 };
-
-console.log(canJump([2,0,0]))
