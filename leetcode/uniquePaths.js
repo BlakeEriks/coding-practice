@@ -20,7 +20,6 @@ var uniquePathsRecursiveMemo = function(m, n) {
 
 var uniquePathsIterativeDP = function(m, n) {
     
-  // let dp = Array.from({length: m}, () => new Array(n).fill(1))
   if (m === 1 || n === 1) return 1
 
   let prev = new Array(n).fill(1)
